@@ -1,0 +1,162 @@
+/* CSS para header fixo */
+#header {
+    position: fixed; /* Fixa o header no topo */
+    top: 0; /* Posiciona o header no topo */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    z-index: 1000; /* Mantém o header acima de outros elementos */
+    background-color: #ffffff; /* Cor de fundo do header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Ajusta o espaço no topo do conteúdo abaixo do header fixo */
+body {
+    padding-top: 80px; /* Altura do header (ajuste conforme necessário) */
+}
+
+/* Estilos adicionais */
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.home-button {
+    background-color: #e5cf8c; /* Bootstrap's primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header-text {
+    font-family: "IBM Plex Serif", sans-serif;
+}
+
+.navbar-brand, .nav-link, .dropdown-item {
+    font-size: 1.5rem; 
+}
+/*Album*/
+
+
+/*Circular*/
+    .container-marketing {
+        padding-top: 10%;    
+        padding-bottom: 6%;
+    }
+    .row{
+        display:flex;
+        align-items: center;
+    }
+    .d-flex{
+    
+        padding-bottom: 2%;
+    }
+    .text-circular-heading{
+        font-family: "IBM Plex Serif", serif;
+    }
+    .text-circular{
+        padding-bottom: 4%;
+        padding-top: 4%;
+        font-size: 1.35rem;
+        margin: 0px 30px 16px 30px;
+        font-family: "Alice", serif;
+        
+    }
+    .row-featurette{
+        padding-top: 6%;
+        padding-bottom: 6%;
+        display: flex;
+        align-items: center;
+        
+    }
+    .bd-placeholder-img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+    }
+    .btn-secondary{
+        font-family: "IBM Plex Serif", sans-serif;
+        background-color: #e5cf8c; /* Bootstrap's primary color */
+        color: white;
+        border: none;
+        padding: 20px 30px;
+        font-size: 160%;
+        border-radius: 8px;
+        text-align: center;
+        
+    }
+/*Price*/
+    .text-price{
+        font-family: "Alice", serif; 
+    }
+    .featurette-heading {
+        font-size: 2rem;
+        margin: 0px 70px 16px 70px;
+        font-weight: bold;
+    }
+    .featurette-heading2{
+        font-family: "IBM Plex Serif", serif;
+        padding-bottom: 4%;
+        font-weight: bold;
+        margin: 0px 70px 16px 70px;
+        
+    }
+    .text-price{
+        font-size: 1.35rem; 
+        margin: 0px 70px 16px 70px;
+    }
+    .featurette-divider{
+        padding-bottom: 6%;
+    }
+    
+    #price{
+        padding-bottom: 6%;
+    }
+    .botão-price{
+        padding-left: 70px;
+        padding-top: 4%;
+        padding-bottom: 5%;
+    }
+    .foto-price{
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+
+    .bold-text {
+        font-weight: bold;
+    }
+    
+/*Footer*/
+    .logotipo-footer{
+        padding-left: 4%;
+        padding-top: 2%;
+    }
+    .logos{
+        padding: 0px 0px 0px 0px;
+    
+    }
+    @media (max-width: 600px) {
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        footer .col-md-4 {
+            text-align: center;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .logos {
+            flex-wrap: wrap;
+        }
+    }

@@ -1,0 +1,115 @@
+/* CSS para header fixo */
+#header {
+    position: fixed; /* Fixa o header no topo */
+    top: 0; /* Posiciona o header no topo */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    z-index: 1000; /* Mantém o header acima de outros elementos */
+    background-color: #ffffff; /* Cor de fundo do header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Ajusta o espaço no topo do conteúdo abaixo do header fixo */
+body {
+    padding-top: 80px; /* Altura do header (ajuste conforme necessário) */
+}
+
+/* Estilos adicionais */
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.home-button {
+    background-color: #e5cf8c; /* Bootstrap's primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.header-text {
+    font-family: "IBM Plex Serif", sans-serif;
+}
+
+.navbar-brand, .nav-link, .dropdown-item {
+    font-size: 1.5rem; 
+}
+
+/* Logo */
+.text-logo {
+    font-family: "Alice", serif;
+}
+
+.text-heading-logo {
+    font-family: "IBM Plex Serif", sans-serif; 
+}
+
+
+
+/* Carrousel */
+.container{
+    padding-bottom: 1%;
+    padding-top: 6%;
+}
+.carousel-inner{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 9%;
+}
+.carousel-item img {
+    object-fit: cover;
+    height: 400px; /* Adjust based on your image height */
+}
+
+.text-content-heading{
+    font-family: "IBM Plex Serif", sans-serif; 
+    padding-bottom: 5%;
+}
+.text-content{
+    font-family: "Alice", serif; 
+    font-size: 120%;
+
+}
+
+.text-content-div {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 9%;
+}
+
+
+/*Footer*/
+.logotipo-footer{
+    padding-left: 4%;
+    padding-top: 2%;
+}
+.logos{
+    padding: 0px 0px 0px 0px;
+
+}
+@media (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .col-md-4 {
+        text-align: center;
+    }
+    .logos {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .logos {
+        flex-wrap: wrap;
+    }
+}
+
